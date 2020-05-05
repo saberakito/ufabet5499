@@ -1,0 +1,46 @@
+.padding20 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.margin0 {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.label_title {
+    width: 100%;
+    background-color: #3A4364;
+    text-align: center;
+    font-size: 1.4em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.content_area_income {
+    width: 100%;
+    border-top: 0px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 0px solid black;
+    background: white;
+    color: black;
+    text-align: center;
+}
+
+.text_stat {
+    font-size: 1.4em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.area_stat {
+    border: 1px solid black;
+}
+
+.text_green {
+    color: #7ED047;
+}

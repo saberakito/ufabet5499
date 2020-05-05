@@ -1,0 +1,66 @@
+
+#inner {
+    display: table;
+    margin: 0 auto;
+  }
+  
+  #outer {
+    width:100%
+  }
+  .table{
+      width: 320px;
+  }
+
+.columns {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 5px 0;
+}
+
+.column {
+	flex: 1;
+	border: 1px solid gray;
+	margin: 2px;
+    padding: 10px;
+    min-height: 150px;
+    text-align: center;
+    position: relative;
+	&:first-child { margin-left: 0; }
+	&:last-child { margin-right: 0; }
+	
+}
+
+.btn_event{
+    margin-top: 40px;
+}
+.win_game{
+    
+}
+
+/* @media screen and (max-width: 980px) {
+    .columns .column {
+          margin-bottom: 5px;
+      flex-basis: 40%;
+          &:nth-last-child(2) {
+              margin-right: 0;
+          }
+          &:last-child {
+              flex-basis: 100%;
+              margin: 0;
+          }
+      }
+  } */
+  
+  @media screen and (max-width: 425px) {
+      .columns .column {
+          flex-basis: 100%;
+          margin: 0 0 5px 0;
+      }
+  }
+
+  @media screen and (min-width: 768px) {
+    .table{
+        width: 620px;
+    }
+  }

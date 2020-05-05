@@ -1,0 +1,22 @@
+<!-- <div class="container" style="background: unset;">
+        <div class="header_bar">
+                <img src="/assets/images/header/header_bar.png">
+        </div>
+</div> -->
+<!-- <ng-container *ngIf="id!='register'&&id!='deposit'&&id!='withdraw'"> -->
+        <div class="content_header" >&nbsp;</div>
+        <div class="titlePage">  {{data_title}} </div>
+        <div class="container page_content" >
+                <div *ngIf="id!='contact'"class="contentPageArea">
+                        <div class="titleContent" [innerHTML]="data_deatail | sanitizeHtml"></div>
+                </div>
+                <div *ngIf="id=='contact'"class="contentPageArea" style="border:0px;">
+                        <div *ngIf="id=='contact'" style="margin-top:30px;" [innerHTML]="data_deatail | sanitizeHtml"></div>
+                </div>
+        </div>
+<!-- </ng-container> -->
+
+<!-- <ng-container *ngIf="id=='register'||id=='deposit'||id=='withdraw'">
+        <div style="width: 100%;height:105%;" [innerHTML]="data_deatail | sanitizeHtml"></div>
+</ng-container> -->
+        

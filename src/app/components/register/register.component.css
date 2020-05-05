@@ -1,0 +1,123 @@
+.contentBotArea{
+    float: left;
+    width: 100%;
+}
+
+.titlePage{
+    margin-top:15px;
+    background-color: #1E1E1E;
+    color: white;
+    padding:15px 0px 15px 15px;
+    font-size: 1.2em;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.titleContentBot{
+    background: #D10000;
+    color: white;
+    padding: 10px;
+    margin-top:10px;
+    float: left;
+    width: 100%;
+}
+.titleLeft{
+    float: left;
+    color: white;
+    font-size: 1.6em;
+
+}
+.viewmore{
+    float: right;
+    margin-top:6px;
+    color:#E8CF01;
+}
+.dataContentBot{
+    /* min-height: 500px; */
+    float: left;
+    width: 100%;
+}
+
+.bootCols{
+    height:100px;
+    margin:0;
+    box-sizing:border-box;
+    padding:5px;
+    border:2px solid black;
+    background-color:red;
+  }
+  .row{
+      margin-left:0px;
+      margin-right: 0px;
+  }
+  .newsArea{
+      height: auto;
+      margin-top: 10px;
+      /* border: 2px solid red; */
+      padding: 0px;
+      min-height: 300px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      padding-left:5px;
+      padding-right:5px;
+  }
+  
+  .cardNews{
+    height: 100%;
+    border: 2px solid #D2AE70;
+  }
+  .image-news{
+      height: calc( 100% - 70px );
+      background-size: cover;
+      background-position: center;
+  }
+  .text-news{
+      padding:10px;
+      border-top:1px solid #D2AE70;
+      color:white;
+      min-height: 50px;
+      
+  }
+
+    .pagination{
+        margin-top:15px;
+        color: white !important;
+    }
+    .ngx-pagination a, .ngx-pagination button {
+        color: white !important;
+    }
+    .ngx-pagination a, .ngx-pagination button {
+        color: white !important;
+    }
+
+    .promotion img{
+        width: 100%;
+    }
+    .promotion_div{
+        position: relative;
+    }
+
+    .detail_Left{
+        width: 100%;
+        float: left;
+        text-align: center;
+    }
+    
+    .detail_Right{
+        width: 100%;
+        float: left;
+    }
+    .control-group{
+        color: white;
+        padding:15px;
+    }
+@media screen and (min-width: 1024px) {
+    .promotion img{
+        width: unset;
+        margin-left: calc( 50% - 320px );
+    }
+}
+@media screen and (min-width: 1200px) {
+    .promotion img{
+        margin-left: calc( 50% - 320px );
+    }
+}

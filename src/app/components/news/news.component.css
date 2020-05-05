@@ -1,0 +1,139 @@
+.contentBotArea{
+    float: left;
+    width: 100%;
+}
+.titlePage{
+    margin-top: -40px;
+    color: white;
+    font-size: 1.5em;
+    position: relative;
+    text-align: center;
+    font-weight: bolder;
+    z-index: 2;
+}
+.titleContentBot{
+    background: #D10000;
+    color: white;
+    padding: 10px;
+    margin-top:10px;
+    float: left;
+    width: 100%;
+}
+.titleLeft{
+    float: left;
+    color: white;
+    font-size: 1.6em;
+
+}
+.viewmore{
+    float: right;
+    margin-top:6px;
+    color:#E8CF01;
+}
+.dataContentBot{
+    /* min-height: 500px; */
+    float: left;
+    width: 100%;
+}
+
+.bootCols{
+    height:100px;
+    margin:0;
+    box-sizing:border-box;
+    padding:5px;
+    border:2px solid black;
+    background-color:red;
+  }
+  .row{
+      margin-left:0px;
+      margin-right: 0px;
+  }
+  .newsArea{
+      height: auto;
+      margin-top: 10px;
+      /* border: 2px solid red; */
+      padding: 0px;
+      min-height: 300px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      padding-left:5px;
+      padding-right:5px;
+  }
+  
+  .cardNews{
+    height: 100%;
+    border: 2px solid #D2AE70;
+  }
+  .image-news{
+      height: calc( 100% - 70px );
+      background-size: cover;
+      background-position: center;
+  }
+  .text-news{
+      padding:10px;
+      border-top:1px solid #D2AE70;
+      color:white;
+      min-height: 50px;
+      
+  }
+
+    .pagination{
+        margin-top:15px;
+        color: white !important;
+    }
+    .ngx-pagination a, .ngx-pagination button {
+        color: white !important;
+    }
+    .ngx-pagination a, .ngx-pagination button {
+        color: white !important;
+    }
+
+
+    
+        .header_page{
+            background-image: url("/assets/images/content/bgmenu.jpg");
+            background-position: center center;
+            background-size: cover;
+            height: 170px;
+        }
+        .title_page{
+            background-image: url("/assets/images/content/tabmenu.png");
+            background-position: center center;
+            background-size: cover;
+            height: 50px;
+            text-align: center;
+            font-size: 1.5em;
+            padding-top:5px;
+            
+        }
+        @media screen and (min-width: 320px) {
+            .title_page{
+                margin-top: 154px;
+            }
+        }
+        @media screen and (min-width: 375px) {
+            .title_page{
+                margin-top: 114px;
+            }
+        }
+        @media screen and (min-width: 500px) {
+            .title_page{
+                margin-top: 74px;
+            }
+        }
+        @media screen and (min-width: 1000px) {
+            .title_page{
+                background-image: url("/assets/images/content/tabmenu.png");
+                background-position: center center;
+                background-size: cover;
+                height: 50px;
+                text-align: center;
+                font-size: 1.5em;
+                padding-top:5px;
+                margin-top: 0px;
+            }
+        }
+@media screen and (min-width: 1200px) {
+
+    
+}

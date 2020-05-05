@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="nav_area">
+        <!-- <div class="logo_nav">
+            <img src="assets/images/logo/logo.png?v=1.1" alt="">
+        </div> -->
+        <div class="topnav" id="myTopnav">
+
+            <ng-container *ngFor="let menu of menus; index as i; first as isFirst;let l = count">
+                <div class="link_nav cal_{{l+3}}" *ngIf="i==0">
+                    <a [routerLinkActive]="['active-menu']" [routerLinkActiveOptions]="{exact:true}" routerLink="/home" class=" links active ">หน้าแรก</a>
+                </div>
+                <div class="link_nav cal_{{l+3}}">
+                    <a [routerLinkActiveOptions]="{exact:true}" [routerLinkActive]="['active-menu']" routerLink="/page/{{menu.menu_route}}" class=" links active ">{{menu.menu_name}}</a>
+                </div>
+                <div class="link_nav cal_{{l+3}}" *ngIf="i==3">
+                    <a [routerLinkActiveOptions]="{exact:true}" [routerLinkActive]="['active-menu']" routerLink="/affiliate" class=" links active ">ลิงค์รับทรัพย์</a>
+                </div>
+                <div class="link_nav cal_{{l+3}}" *ngIf="i==3">
+                    <a [routerLinkActiveOptions]="{exact:true}" [routerLinkActive]="['active-menu']" routerLink="/promotion" class=" links active ">โปรโมชั่น</a>
+                </div>
+            </ng-container>
+
+            <!-- <ng-container *ngIf='login_status_check!="1"'>
+                        <div class="link_nav cal_4">
+                            <a [routerLinkActive]="['active-menu']"  [routerLinkActiveOptions]="{exact:true}" routerLink="/promotion" class=" links active ">ค่าบริการ</a>
+                        </div>
+                        <div class="link_nav cal_4">
+                            <a [routerLinkActive]="['active-menu']"  [routerLinkActiveOptions]="{exact:true}" routerLink="/register" class=" links active ">สมัครสมาชิก</a>
+                        </div>
+                        <div class="link_nav cal_4">
+                            <a [routerLinkActive]="['active-menu']"  [routerLinkActiveOptions]="{exact:true}" routerLink="/login" class=" links active ">เข้าสู่ระบบ</a>
+                        </div>
+                    </ng-container> -->
+
+            <a [routerLinkActive]="['active-menu']" [routerLinkActiveOptions]="{exact:true}" href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="topnav_mobile" id="myTopnav">
+    <ng-container *ngFor="let menu of menus; index as i; first as isFirst;let l = count">
+        <a [routerLinkActive]="['active-menu']" *ngIf="i==0" [routerLinkActiveOptions]="{exact:true}" routerLink="/home" class="btn_mobile btn  links active cal_{{l+2}}">หน้าหลัก</a>
+        <a [routerLinkActive]="['active-menu']" [routerLinkActiveOptions]="{exact:true}" routerLink="/page/{{menu.menu_route}}" class="btn_mobile btn  width_{{i+1}} links active cal_{{l+2}}">{{menu.menu_name}}</a>
+        <a [routerLinkActive]="['active-menu']" *ngIf="i==2" [routerLinkActiveOptions]="{exact:true}" routerLink="/affiliate" class="btn_mobile btn  links cal_{{l+2}}">ลิงค์รับทรัพย์</a>
+        <a [routerLinkActive]="['active-menu']" *ngIf="i==2" [routerLinkActiveOptions]="{exact:true}" routerLink="/promotion" class="btn_mobile btn  links cal_{{l+2}}">โปรโมชั่น</a>
+    </ng-container>
+</div>

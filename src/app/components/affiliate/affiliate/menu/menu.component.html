@@ -1,0 +1,9 @@
+<div class="container" style="padding:20px;color:white;">
+    <div class="navbar">
+        <a [routerLink]="['/affiliates/main']" routerLinkActive="active"><i class="fa fa-3 fa-fw fa-home"></i> หน้าแรก</a>
+        <a [routerLink]="['/affiliates/income']" routerLinkActive="active"><i class="fa fa-3 fa-fw fa-usd"></i> รายได้</a>
+        <a [routerLink]="['/affiliates/member']" routerLinkActive="active"><i class="fa fa-3 fa-fw fa-user"></i> สมาชิก</a>
+        <a [routerLink]="['/affiliates/withdraw']" routerLinkActive="active"><i class="fa fa-3 fa-money"></i> ถอนรายได้</a>
+        <a (click)="logoutRubsub()"><i class=" fa fa-window-close "></i> LOGOUT</a>
+    </div>
+</div>

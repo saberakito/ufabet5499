@@ -1,0 +1,24 @@
+
+<div class="container">
+    <div class="content_header">&nbsp;</div>
+    <div class="titlePage2">
+        บทความ
+    </div>
+  <div class="titlePage">
+      {{adjust_page_title}}
+  </div>
+  <div class="contentPageArea">
+      <div class="row">
+          <div class="col">
+              
+          </div>
+          <div class="col-xl-6 col-md-6 col-sm-12 newsArea image-news" [ngStyle]="{backgroundImage:'url(' + adjust_page_image_url  + ')'}">
+            </div>
+          <div class="col">
+            
+          </div>
+        </div>
+      
+        <div class="titleContent" [innerHTML]="adjust_page_description | sanitizeHtml"></div>
+  </div>
+</div>

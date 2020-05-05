@@ -1,0 +1,94 @@
+.titlePage{
+    
+    color: white;
+    font-size: 1.5em;
+    position: relative;
+    text-align: center;
+    font-weight: bolder;
+    position: relative;
+    z-index: 2;
+    margin-top: -40px;
+    
+}
+.page_detailLeft{
+    float: left;
+    width: 100%;
+}
+.page_detailRight{
+    float: left;
+    width: 100%;
+}
+.page_content{
+    margin-top:-45px;
+}
+.container{
+    /* background: rgba(9, 10, 12, 0.77); */
+}
+.titleContent{
+    padding: 5px;
+    /* background: rgba(51, 51, 51, 0.92);
+    border: 1px solid #363636; */
+    margin-top:30px;
+}
+.header_page{
+    
+}
+.title_page{
+    background-image: url("/assets/images/content/tabmenu.png");
+    background-position: center center;
+    background-size: cover;
+    height: 50px;
+    text-align: center;
+    font-size: 1.5em;
+    padding-top:5px;
+    
+    
+}
+@media screen and (min-width: 320px) {
+    .title_page{
+        margin-top: 154px;
+    }
+}
+@media screen and (min-width: 375px) {
+    .title_page{
+        margin-top: 114px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .title_page{
+        margin-top: 74px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .page_detailLeft{
+        float: left;
+        width: 50%;
+    }
+    .page_detailRight{
+        float: left;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .title_page{
+        background-image: url("/assets/images/content/tabmenu.png");
+        background-position: center center;
+        background-size: cover;
+        height: 50px;
+        text-align: center;
+        font-size: 1.5em;
+        padding-top:5px;
+        margin-top: 0px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .titleContent{
+        padding: 25px;
+    }
+  }
+
+  

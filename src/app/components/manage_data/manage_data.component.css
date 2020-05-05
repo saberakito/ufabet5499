@@ -1,0 +1,102 @@
+
+#inner {
+    display: table;
+    margin: 0 auto;
+  }
+  
+  #outer {
+    width:100%
+  }
+  .table{
+      width: 320px;
+  }
+
+.columns {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 5px 0;
+}
+
+.column {
+	flex: 1;
+	border: 1px solid gray;
+	margin: 2px;
+    padding: 10px;
+    min-height: 150px;
+    text-align: center;
+    position: relative;
+	&:first-child { margin-left: 0; }
+	&:last-child { margin-right: 0; }
+	
+}
+
+.btn_event{
+    margin-top: 40px;
+}
+.win_game{
+    
+}
+
+/* @media screen and (max-width: 980px) {
+    .columns .column {
+          margin-bottom: 5px;
+      flex-basis: 40%;
+          &:nth-last-child(2) {
+              margin-right: 0;
+          }
+          &:last-child {
+              flex-basis: 100%;
+              margin: 0;
+          }
+      }
+  } */
+  
+
+  .sidenav {
+    height: 100%;
+    width: 200px;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    float: left;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  .main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  @media screen and (max-width: 425px) {
+      .columns .column {
+          flex-basis: 100%;
+          margin: 0 0 5px 0;
+      }
+  }
+
+  @media screen and (min-width: 768px) {
+    .table{
+        width: 620px;
+    }
+  }

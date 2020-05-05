@@ -1,0 +1,84 @@
+.area_register_complete {
+    width: 100%;
+    float: left;
+}
+
+.text_register_complete {
+    color: red;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.text_register_complete2 {
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.image_register_complete img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    clear: both;
+}
+
+.image_register_complete:hover {
+    cursor: pointer;
+}
+
+.text_title {
+    font-size: 1.4em;
+}
+
+.rubsub_img {
+    margin: auto;
+    display: block;
+    width: 50%;
+}
+
+.input_area {
+    padding-top: 20px;
+    margin: auto;
+    display: block;
+    width: 50%;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+.social_icon span:hover {
+    cursor: pointer;
+}
+
+.social_icon {
+    margin: auto;
+    display: block;
+    width: 20%;
+}
+
+.social_icon span {
+    font-size: 60px;
+    margin-left: 10px;
+    color: #202C3C;
+}
+
+@media (min-width: 768px) {
+    .social_icon {
+        margin: auto;
+        display: block;
+        width: 26%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .social_icon {
+        margin: auto;
+        display: block;
+        width: 20%;
+    }
+}

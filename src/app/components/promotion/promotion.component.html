@@ -1,0 +1,34 @@
+<div  class="content_header">&nbsp;</div>
+<div  class="titlePage"> โปรโมชั่น
+  </div>
+  <div  class="container page_content">
+      <div  class="contentPageArea">
+          <div  class="row " style="background: rgba(51, 51, 51, 0.77);">
+            <ng-container *ngFor="let promotion of todoPromotionText; index as i; first as isFirst;let l = count">
+                    <div routerLink="/promotion/promotion-detail/{{promotion.adjust_page_id}}"  class="col-md-6 hvr-push" style="margin-bottom:15px;padding:25px;">
+                            <div  class="titlePromotion">{{promotion.adjust_page_title}}</div>
+                               <div  class="detailLeft">
+                                   <img  class="attachment-alpha-store-carousel size-alpha-store-carousel wp-post-image" draggable="false" style="width: 100%;" src="/upload/files/{{promotion.adjust_page_image_name}}.{{promotion.adjust_page_image_type}}">
+                               </div>
+                               <div  class="titlePromotion" style="margin-top:15px;">
+                                   {{promotion.adjust_page_short_description}}
+                               </div>
+                           </div>
+            </ng-container>
+            
+            
+              
+              <!-- <div  class="col-md-12" style="margin-bottom:15px;padding:25px;">
+                  <div  class="titlePromotion">แนะนำเพื่อนใหม่</div>
+                  <div  class="detailLeft"><img  class="attachment-alpha-store-carousel size-alpha-store-carousel wp-post-image" draggable="false" style="width: 100%;" src="/upload/files/2019-10-22_09-02-021571731322.jpg"></div>
+                  <div  class="titlePromotion" style="margin-top:15px;">แนะนำเพื่อนใหม่ สมัครสมาชิก รับ 20% ของยอดฝากเพื่อนทันที ทำยอดเครดิต 3 เท่าของโบนัส ถอนได้ทันที ไม่จำกัดเกมส์เดิมพัน สามารถเล่นได้ทุกเกมส์พนัน</div>
+              </div>
+              
+              <div  class="col-md-12" style="margin-bottom:15px;padding:25px;">
+                  <div  class="titlePromotion">โปรโมชั่นฝาก 1,000 รับเพิ่มอีก 1,000 ทันที</div>
+                  <div  class="detailLeft"><img  class="attachment-alpha-store-carousel size-alpha-store-carousel wp-post-image" draggable="false" style="width: 100%;" src="/upload/files/2019-11-14_10-56-581573729018.png"></div>
+                  <div  class="titlePromotion" style="margin-top:15px;"></div>
+              </div> -->
+          </div>
+      </div>
+  </div>

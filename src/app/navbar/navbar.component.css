@@ -1,0 +1,272 @@
+.active-menu {
+    /* background-color: #ddd; */
+    text-decoration: underline;
+    color: white !important;
+}
+
+.nav_area {
+    width: 100%;
+    float: left;
+    background: black;
+}
+
+.container.nav {
+    background: black !important;
+}
+
+.logo_nav {
+    width: 200px;
+    height: auto;
+    float: left;
+    position: absolute;
+    z-index: 222;
+    display: none;
+    margin-top: 10px;
+}
+
+.logo_nav img {
+    width: 100%;
+    height: auto;
+}
+
+.link_nav {
+    float: left;
+    /* border-left: 1px solid white; */
+    height: 40px;
+}
+
+.link_nav:first-child {
+    border-left: 0px solid #373737;
+}
+
+.link_nav:nth-last-child(2) {
+    border-right: 0px solid #373737;
+}
+
+.topnav {
+    /* padding: 10px 10px; */
+    background-image: url(/assets/images/menu/bgfooter2.jpg);
+    background-size: 100% 75px;
+    padding-left: 0px;
+    padding-right: 0px;
+    overflow: hidden;
+    color: black;
+    display: none;
+}
+
+.topnav .container {
+    overflow: unset;
+}
+
+.topnav_mobile {
+    float: left;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.btn_mobile {
+    margin-right: 5px;
+    margin-top: 5px;
+    width: 110px !important;
+    background-color: #FEC965;
+    color: white;
+    font-size: 14px;
+    border-bottom: 3px solid #ccc;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffaa2b+0,ffa927+29,ffa927+29,ffa927+37,ffa927+44,ffd181+100 */
+    background: rgba(28, 0, 1, 1);
+    background: -moz-linear-gradient(left, rgba(28, 0, 1, 1) 0%, rgba(66, 0, 0, 1) 28%, rgba(66, 0, 0, 1) 74%, rgba(28, 0, 1, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(28, 0, 1, 1)), color-stop(28%, rgba(66, 0, 0, 1)), color-stop(74%, rgba(66, 0, 0, 1)), color-stop(100%, rgba(28, 0, 1, 1)));
+    background: -webkit-linear-gradient(left, rgba(28, 0, 1, 1) 0%, rgba(66, 0, 0, 1) 28%, rgba(66, 0, 0, 1) 74%, rgba(28, 0, 1, 1) 100%);
+    background: -o-linear-gradient(left, rgba(28, 0, 1, 1) 0%, rgba(66, 0, 0, 1) 28%, rgba(66, 0, 0, 1) 74%, rgba(28, 0, 1, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(28, 0, 1, 1) 0%, rgba(66, 0, 0, 1) 28%, rgba(66, 0, 0, 1) 74%, rgba(28, 0, 1, 1) 100%);
+    background: linear-gradient(to right, rgba(28, 0, 1, 1) 0%, rgba(66, 0, 0, 1) 28%, rgba(66, 0, 0, 1) 74%, rgba(28, 0, 1, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#1c0001', endColorstr='#1c0001', GradientType=1);
+}
+
+@media screen and (min-width: 1000px) {
+    .logo_nav {
+        display: block;
+    }
+    .topnav {
+        display: block;
+        /* width: calc(100% - 180px);
+    float: right; */
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .topnav_mobile {
+        display: none;
+    }
+    .topnav .container {
+        /* width: 960px; */
+        /* padding-right: 364px; */
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .topnav {
+        /* max-width: 780px; */
+        /* float: right; */
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .topnav .container {
+        /* width: 960px; */
+        /* padding-right: 364px; */
+    }
+}
+
+@media screen and (min-width: 1101px) {
+    .topnav {
+        /* padding-left:30px;
+    padding-right: 30px; */
+    }
+    /* .width_0{
+    width: 85px !important;
+  }
+  .width_2{
+    width: 130px !important;
+  }
+  .width_3{
+    width: 120px !important;
+  }
+  .width_4{
+    width: 130px !important;
+  } */
+    .width_5 {}
+    /* .width_6{
+    width: 90px !important;
+  } */
+}
+
+@media screen and (min-width: 1200px) {
+    .topnav {
+        /* padding-left:100px;
+    padding-right: 100px; */
+    }
+    /* .width_0{
+    width: 90px !important;
+  }
+  .width_2{
+    width: 140px !important;
+  }
+  .width_3{
+    width: 102px !important;
+  }
+  .width_4{
+    width: 131px !important;
+  } */
+    .width_5 {}
+    /* .width_6{
+    width: 90px !important;
+  } */
+    .topnav .container {
+        /* width: 1140px; */
+        /* padding-right: 364px; */
+    }
+}
+
+@media screen and (min-width: 1354px) {
+    /* .width_0{
+    width: 90px !important;
+  }
+  .width_2{
+    width: 140px !important;
+  }
+  .width_3{
+    width: 130px !important;
+  }
+  .width_4{
+    width: 131px !important;
+  } */
+    .width_5 {}
+    /* .width_6{
+    width: 155px !important;
+  } */
+}
+
+@media screen and (min-width: 1400px) {
+    .topnav {
+        /* padding-left:200px;
+    padding-right: 200px; */
+    }
+    /* .width_0{
+    width: 90px !important;
+  }
+  .width_2{
+    width: 127px  !important;
+  }
+  .width_3{
+    width: 120px !important;
+  }
+  .width_4{
+    width: 121px !important;
+  } */
+    .width_5 {}
+    /* .width_6{
+    width: 90px  !important;
+  } */
+}
+
+@media screen and (min-width: 1500px) {
+    .topnav {
+        /* padding-left:200px;
+    padding-right: 200px; */
+    }
+    .topnav .container {
+        width: 100%;
+        /* padding-right: 364px; */
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .topnav {
+        /* padding-left:200px;
+    padding-right: 200px; */
+    }
+    .topnav .container {
+        width: 100%;
+        /* padding-right: 364px; */
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .topnav {
+        /* padding-left:300px;
+    padding-right: 300px; */
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .topnav {
+        /* width: calc(100% - 180px);
+        float: right; */
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    /* .width_0{
+    width: 96px  !important;
+  }
+  .width_2{
+    width: 139px  !important;
+  }
+  .width_3{
+    width: 120px !important;
+  }
+  .width_4{
+    width: 121px !important;
+  } */
+    .width_5 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .topnav .container {
+        width: 100%;
+        /* padding-right: 364px; */
+    }
+    /* .width_6{
+    width: 180px  !important;
+  } */
+}

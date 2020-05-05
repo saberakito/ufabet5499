@@ -1,0 +1,28 @@
+.area_register_complete {
+    width: 100%;
+    float: left;
+}
+
+.text_register_complete {
+    color: red;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.text_register_complete2 {
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.image_register_complete img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    clear: both;
+}
+
+.image_register_complete:hover {
+    cursor: pointer;
+}

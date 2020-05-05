@@ -1,0 +1,100 @@
+.contentPageArea{
+    margin-left:0px;
+    margin-right: 0px;
+    padding: 0px;
+    border: 0px solid #D10000;
+    margin-top:30px;
+    margin-bottom:30px;
+    padding:0 50px 0 50px;
+}
+.image-news{
+    background-size: cover;
+    background-position: center;
+    height: 536px;
+    width: 100%;
+    background-image: url(/assets/images/news/callcenter.jpg);
+}
+    .cardNews{
+        height: 100%;
+        border: 2px solid red;
+    }
+    .image-regiscomplete{
+        margin-top:30px;
+        /* background-image: url(/assets/images/content/register-page.jpg);
+        background-size: cover;
+        background-position: center; */
+        height: auto;
+        width: 80%;
+        margin-left:10%;
+        text-align: center;
+    }
+  .titlePage2{
+      color: #18FF00;
+      font-size: 1.5em;
+      text-align: center;
+  }
+  .titlePage{
+    margin-top: -40px;
+    color: white;
+    font-size: 1.5em;
+    position: relative;
+    text-align: center;
+    font-weight: bolder;
+    z-index: 2;
+}
+  .qr_area_regiscomplete{
+    margin-top:30px;
+    width: 250px;
+    
+  }
+    .qr_register{
+        background-image: url(/assets/images/icon/qr.png?v=1.1);
+        background-size: 100% 100%;
+        position: absolute;
+        width:250px;
+        height: 225px;
+        top:450px;
+        right: 50px;
+        z-index: 9;
+    }
+    .image_qr{
+        width: 140px;
+    }
+    .qr_area_regiscomplete .detailLeft{
+        float: left;
+        margin-top:20px;
+        width:100%;
+    }
+    .qr_area_regiscomplete .detailRight{
+        float: left;
+        width:100%;
+        margin-top:20px;
+    }
+    
+    .center {
+        margin: auto;
+        width: 100%;
+        padding: 10px;
+      }
+    @media screen and (min-width: 425px) {
+        .qr_area_regiscomplete{
+            margin-top: 35px;
+          }
+    }
+
+    @media screen and (min-width: 767px) {
+        .center {
+            width: 40%;
+          }
+        .qr_area_regiscomplete .detailLeft{
+            padding-top:20px;
+           float: left;
+           text-align: right;
+           padding-right: 30px;
+            width:45%;
+        }
+        .qr_area_regiscomplete .detailRight{
+           
+            width:50%;
+        }
+    }

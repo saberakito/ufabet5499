@@ -1,0 +1,22 @@
+
+<div class="container" >
+    <div class="content_header">&nbsp;</div>
+    <div class="titlePage">
+            โปรโมชั่น
+    </div>
+  <div class="contentPageArea">
+      <div class="row bg_color">
+          <div class="col">
+              
+          </div>
+          <div class="col-xl-6 col-md-6 col-sm-12 newsArea image-news">
+            <img class="img_center" src="{{adjust_page_image_url}}" alt="">
+          </div>
+          <div class="col">
+            
+          </div>
+        </div>
+        <div class="titlePromotion"><div class="cycle_red">&nbsp;</div>{{adjust_page_title}}</div>
+        <div class="titleContent" [innerHTML]="adjust_page_description | sanitizeHtml"></div>
+  </div>
+</div>

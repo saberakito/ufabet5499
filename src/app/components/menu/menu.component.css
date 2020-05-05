@@ -1,0 +1,233 @@
+.home_menu{
+    background-color: #111111;
+    height: auto;
+    min-height: 400px;
+    width: 100%;
+    float: left;
+}
+
+.menu_title{
+    font-size: 1.4em;
+    color:white;
+}
+.menu_des{
+    color:#AB8847;
+}
+.icon_menu_btn{
+    cursor: pointer;
+}
+.icon_menu_btn:hover{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.icon_menu_home{
+    width: 150px; height:auto;
+}
+.home_menu .container{
+    background-color: unset;
+    text-align: center;
+}
+
+.text_menu{
+    padding-top: 30px;
+    color: white;
+    font-size: 2em;
+}
+.text_menu2{
+    clear: left;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+
+.area_menu{
+    width: 100%;
+}
+
+
+
+
+.subMenu{
+    flex-direction: row;
+    /* display: none; */
+    margin-top:15px;
+}
+.nav-item-sub{
+    /* width: 11.11%; */
+    line-height: 1;
+}
+.nav-item:hover{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+.navbar-nav .nav-link {
+    padding-right: 15px;
+    padding-left: 15px;
+   height: 40px;
+   bottom: -5px;
+    position: relative;
+}
+.nav-item-sub1{
+    background-image: url('/assets/images/menu/sport.jpg');
+    margin-left: 10px;
+    width: 25%;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.nav-item-sub2{
+    background-image: url('/assets/images/menu/casino.jpg');
+    margin-left: 10px;
+    width: 25%;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.nav-item-sub3{
+    background-image: url('/assets/images/menu/game.jpg');
+    margin-left: 10px;
+    width: 25%;
+    height: 220px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.nav-item-sub4{
+    background-image: url('/assets/images/menu/lotto.jpg');
+    margin-left: 10px;
+    width: 25%;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width:300px) and (max-width:500px) {
+    .nav-item-sub1{
+        background-image: url('/assets/images/menu/sport.jpg');
+        margin-left: 10px;
+        width: 25%;
+        height: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .nav-item-sub2{
+        background-image: url('/assets/images/menu/casino.jpg');
+        margin-left: 10px;
+        width: 25%;
+        height: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .nav-item-sub3{
+        background-image: url('/assets/images/menu/game.jpg');
+        margin-left: 10px;
+        width: 25%;
+        height: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .nav-item-sub4{
+        background-image: url('/assets/images/menu/lotto.jpg');
+        margin-left: 10px;
+        width: 25%;
+        height: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+
+.tab-menu .nav-link {
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+    color: #fff;
+    font-family: Kanit;
+    padding: 15px 0;
+    display: block;
+    background: #d42027;
+    position: relative;
+    margin: 0px;
+}
+
+.nav-item:first-child { 
+    margin-left:0px;
+}
+
+.nav-pills .nav-item+.nav-item, .nav-tabs .nav-item+.nav-item {
+    margin-left: .2rem;
+}
+
+.nav-link {
+    color:#fff !important;
+    font-size: 12px  !important;
+    font-family: Kanit !important;
+}
+.hot {
+    color: #fff;
+    background-color: #d42027;
+    display: inline-block;
+    font-size: 8px;
+    padding: 1px 2px;
+    border-radius: 2px;
+    position: absolute;
+    animation: blinker 1s linear infinite;
+    right: 0;
+    top: 25px;
+}
+
+.active-menu
+{
+    background: white;
+}
+.active-menu-text{
+    color:black !important;
+}
+@media screen and (min-width: 500px) and (max-width:639px) {
+    .subMenu{
+        height: 90px;
+    }
+}
+@media screen and (min-width: 640px) {
+    .subMenu{
+        height: 106px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:900px) {
+    .subMenu{
+        display: flex;
+        height: 140px;
+    }
+}
+
+@media screen and (min-width:901px) and (max-width:1023px) {
+    .subMenu{
+        height: 180px;
+    }
+}
+@media (min-width: 1024px){
+    .subMenu{
+        display: flex;
+        height: 195px;
+    }
+}
+@media (min-width: 1100px){
+    .subMenu{
+        display: flex;
+        height: 190px;
+    }
+}
+@media (min-width: 1200px){
+    .subMenu{
+        display: flex;
+        height: 230px;
+    }
+}
+
+
+@media screen and (min-width: 1100px) {
+    .icon_menu_home{
+        width: 200px; height:auto;
+    }
+}

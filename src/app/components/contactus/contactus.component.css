@@ -1,0 +1,23 @@
+.contentPageArea{
+    margin-left:0px;
+    margin-right: 0px;
+    padding: 0px;
+    border: 0px solid #D10000;
+    margin-top:30px;
+    margin-bottom:30px;
+    padding:0 50px 0 50px;
+}
+.image-news{
+    background-size: cover;
+    background-position: center;
+    height: 536px;
+    width: 100%;
+    background-image: url(/assets/images/news/callcenter.jpg);
+}
+.cardNews{
+    height: 100%;
+    border: 2px solid red;
+  }
+  .container{
+
+  }

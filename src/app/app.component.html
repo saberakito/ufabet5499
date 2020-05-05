@@ -1,0 +1,29 @@
+<div *ngIf="showHeader" class="{{class_checkShow}}">
+    <div class="container">
+        <div class="header-area">
+            <div class="logo_area"><img src="/assets/images/logo/logo.png?v=1.1"></div>
+            <div class="image_header_area">
+                <img src="/assets/images/content/money-transfer2.png?v=1.1" alt="">
+            </div>
+        </div>
+
+    </div>
+    <app-navbar>
+
+    </app-navbar>
+
+</div>
+
+<div class="content page">
+    <router-outlet></router-outlet>
+</div>
+
+<div class="m_footer col-xs-12">
+    <div class="col-xs-3" routerLink="/home"><img src="assets/images/footer/icon-home.png"></div>
+    <div class="col-xs-3">
+        <a href="http://line.me/ti/p/~@ufa549" target="_bank"><img src="assets/images/footer/icon-line.png"></a>
+    </div>
+    <div class="col-xs-3" routerLink="/promotion"><img src="assets/images/footer/icon_guide.png"></div>
+    <div class="col-xs-3" routerLink="/page/register"><img src="assets/images/footer/icon_add.png"></div>
+</div>
+<app-footer *ngIf="showHeader"></app-footer>

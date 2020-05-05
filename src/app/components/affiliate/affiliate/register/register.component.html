@@ -1,0 +1,76 @@
+<div class="container" style="padding:20px;color:white;">
+    <ng-container *ngIf="haveRubSub==true&&id==null">
+        <div class="area_register_complete">
+            <div class="text_register_complete">
+                คุณได้สมัครสมาชิกเรียบร้อยแล้ว กรุณาแอดไลน์ด้านล่างเพื่อรับ ยูสเซอร์เนม และ พาสเวิร์ด
+            </div>
+            <div class="text_register_complete2">
+                หากมีข้อสงสัยกรุณากดโลโก้ LINE เพื่อติดต่อเจ้าหน้าที่
+            </div>
+            <div class="image_register_complete">
+                <img src="/assets/images/icon/line-icon.png" alt="">
+            </div>
+            <div class="text_register_complete2">
+                ติดต่อเจ้าหน้าที่
+            </div>
+        </div>
+
+    </ng-container>
+    <ng-container *ngIf="haveRubSub!=true||id!=null">
+        <ng-container *ngIf="id==null">
+            <button class="btn btn-info" [routerLink]="['/affiliate']" routerLinkActive="router-link-active">กลับ</button>
+        </ng-container>
+        <form #form="ngForm" (ngSubmit)="onSubmit(form)">
+            <fieldset>
+                <div id="legend">
+                    <legend class="">กรุณากรอก ข้อมูลเพื่อรับ USER/PASS</legend>
+                </div>
+                <div class="control-group">
+                    <!-- Username -->
+                    <label class="control-label " for="a_name">ชื่อ - นามสกุล</label>
+                    <div class="controls">
+                        <input type="text" id="a_name" name="a_name" [(ngModel)]="a_name" class="input-xlarge form-control">
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <!-- E-mail -->
+                    <label class="control-label" for="a_nickname">ชื่อเล่น</label>
+                    <div class="controls">
+                        <input type="text" id="a_nickname" name="a_nickname" [(ngModel)]="a_nickname" class="input-xlarge form-control">
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <!-- Password-->
+                    <label class="control-label" for="a_line">ID LINE</label>
+                    <div class="controls">
+                        <input type="text" id="a_line" name="a_line" [(ngModel)]="a_line" class="input-xlarge form-control">
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <!-- Password -->
+                    <label class="control-label" for="a_from">ช่องทางที่รู้จัก</label>
+
+                    <div class="controls">
+                        <select name="a_from" [(ngModel)]="a_from" id="a_from" class="form-control">
+                            <option value="Facebook">Facebook</option>
+                            <option value="Google">Google</option>
+                            <option value="Twitter">Twitter</option>
+                        </select>
+                        <!-- <input type="text" id="a_from" name="a_from" [(ngModel)]="a_from" class="input-xlarge form-control"> -->
+                    </div>
+                </div>
+
+                <div class="control-group" style="padding-top:20px;">
+                    <!-- Button -->
+                    <div class="controls">
+                        <button type="submit" class="btn btn-success">ขอรับ User/Pass</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </ng-container>
+
+</div>

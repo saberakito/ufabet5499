@@ -1,0 +1,75 @@
+<div class="container">
+    <div class="row min-vh-100"> 
+      <aside class="col-12 col-md-2 p-0 bg-dark">
+          <nav class="navbar navbar-expand navbar-dark bg-dark flex-md-column flex-row align-items-start py-2">
+              <div class="collapse navbar-collapse">
+                  <ul class="flex-md-column flex-row navbar-nav w-100 justify-content-between">
+                      <li class="nav-item">
+                          <a class="nav-link pl-0 text-nowrap"  routerLink="/manage_data/activity"><i class="fa fa-bullseye fa-fw"></i> <span class="font-weight-bold">กิจกรรม</span></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link pl-0"  routerLink="/manage_data/setting"><i class="fa fa-heart-o fa-fw"></i> <span class="d-none d-md-inline">ตั้งค่า</span></a>
+                      </li>
+                  </ul>
+              </div>
+          </nav>
+      </aside>
+        
+      <main class="col bg-faded py-3" style="background: #ccc;">
+
+          <ng-container *ngIf="id=='activity'||id==''||id==null">
+              <section class="columns">
+                  <div class="column">
+                      <h2 style="text-align: center;">สุ่มรายชื่อ</h2>
+                      <div class=" btn_event form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">เลือกใช้</label>
+                      </div>
+                    </div>
+                    
+                    <div class="column">
+                      <h2  style="text-align: center;">ลำดับ</h2>
+                      <div class=" btn_event form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">เลือกใช้</label>
+                      </div>
+                    </div>
+              </section>
+          </ng-container>
+          
+          
+          <ng-container *ngIf="id=='setting'">
+              <section class="columns">
+                  <div class="column">
+                      <div class="form-group">
+                          <label for="exampleInputEmail1">Header</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Brandname">
+                          <small id="emailHelp" class="form-text text-muted">....</small>
+                        </div>
+                      <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="customFile">
+                        <label class="custom-file-label" for="customFile">Choose file</label>
+                      </div>
+                      <div class="card">
+                        <div class="card-body text-center d-flex justify-content-center align-items-center flex-column" style="width: 500px;">
+                            <color-sketch (onChange)="handleChange($event)"></color-sketch>
+                        </div>
+                      </div>
+                      <button type="button" class="btn_event btn btn-success">Preview</button>
+                      <br>
+                      <br>
+                      <div class="card" style="padding:20px;">
+                        <div class="card-body text-center d-flex justify-content-center align-items-center flex-column" style="text-align: center;border:1px solid black;width: 100%;height: 500px;" >
+                            PREVIEW
+                        </div>
+                      </div>
+                  </div>
+                  
+              </section>
+          </ng-container>
+          
+
+          
+      </main>
+  </div> 
+</div>
