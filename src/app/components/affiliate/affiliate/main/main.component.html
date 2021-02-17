@@ -3,7 +3,7 @@
 <div class="container padding20">
     <div class="income_area">
         <div class="label_title">
-            ข้อความโปรโมทและลิงค์
+            ลิงก์โปรโมท
         </div>
     </div>
     <div class="content_area_income" style="background-color: #E7E077;">
@@ -11,18 +11,29 @@
             <div class="col-sm area_stat" style="padding-top: 20px;border:0px !important;">
                 <img class="rubsub_img" src="/assets/images/content/rubsub.jpg" alt="">
                 <div class="input_area">
-                    <input placeholder="ข้อความโปรโมท" type="text" name="" class="form-control" id="">
+                    <img class="image_share2" src="/assets/images/affm/link_button.png">
+                    <div class="input-group mb-3">
+                        <input #userinput aria-describedby="basic-addon2" #link readonly placeholder="ลิงก์โปรโมท" type="text" name="" value="https://ufabet5499.com/affm/register/{{member_code_token}}" class="form-control" id="link">
+                        <div class="input-group-append">
+                            <!-- <span (click)="copyInputMessage(userinput)" style="background: #202C3C; color: white;" class="input-group-text hover" id="basic-addon2">copy</span> -->
+                        </div>
+                    </div>
                 </div>
                 <div class="social_icon">
-                    <a href='https://www.facebook.com/sharer.php?u=https://f1ball.net/affiliates/register/{{member_code}}' target='_blank'>
-                        <span><i class="fab fa-facebook-square"></i></span>
-                    </a>
-                    <a href='https://plus.google.com/share?url=https://f1ball.net/affiliates/register/{{member_code}}' target='_blank'>
+                    <div class="div_share">
+                        <a href='https://www.facebook.com/sharer.php?u=https://ufabet5499.com/affm/register/{{member_code_token}}' target='_blank'>
+                            <img class="image_share" src="/assets/images/affm/facebook_share_button.png">
+                        </a>
+                    </div>
+
+
+                    <div class="div_share hover" (click)="copyInputMessage(userinput)"><img class="image_share" src="/assets/images/affm/copy_share_button.png"></div>
+                    <!-- <a href='https://plus.google.com/share?url=https://ufabet5499.com/affiliates/register/{{member_code}}' target='_blank'>
                         <span><i class="fab fa-google-plus-square"></i></span>
                     </a>
-                    <a href='https://twitter.com/share?url=https://f1ball.net/affiliates/register/{{member_code}}' target='_blank'>
+                    <a href='https://twitter.com/share?url=https://ufabet5499.com/affiliates/register/{{member_code}}' target='_blank'>
                         <span><i class="fab fa-twitter-square"></i></span>
-                    </a>
+                    </a> -->
 
                 </div>
             </div>

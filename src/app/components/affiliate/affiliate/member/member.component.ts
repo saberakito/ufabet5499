@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { TodoService } from 'src/app/service/todo.service';
 @Component({
   selector: 'app-member',
   templateUrl: './member.component.html',
@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MemberComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private todoServcie:TodoService) { }
+  listMember:any;
   ngOnInit() {
+    this.todoServcie.getMemberAff().subscribe(data=>{
+      this.listMember = data;
+    });
   }
 
 }

@@ -1,5 +1,5 @@
 import { Component,ViewChild } from '@angular/core';
-
+import { ActivatedRoute } from "@angular/router";
 import { AuthService } from './service/auth.service';
 import { Router,NavigationEnd } from '@angular/router';
 import { NgImageSliderComponent } from 'ng-image-slider';
@@ -14,7 +14,9 @@ import * as $ from 'jquery';
 })
 export class AppComponent {
   title = 'casino';
-  constructor(private todoServcie:TodoService,private _authService:AuthService, private _router:Router, private cookie:CookieService,private router:Router){}
+  constructor(private route: ActivatedRoute,private todoServcie:TodoService,private _authService:AuthService, private _router:Router, private cookie:CookieService,private router:Router){
+    
+  }
   @ViewChild('nav') slider: NgImageSliderComponent;
   public close_popup = "0";
   public adjust_page_image_name:string;
@@ -47,11 +49,22 @@ export class AppComponent {
   }
   public class_checkShow:string;
   showHeader = true;
+  check_url1:any;
+  menu_close:any;
+  order: string;
+  orderObj:any;
   ngOnInit() {
+    // this.route.queryParamMap.subscribe(params => {
+    //   debugger;
+    //   this.orderObj = {...params.keys, ...params};
+    // });
+    
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         var check_url = event.url.split("/")[2];
-        if(check_url=='register'||check_url=='deposit'||check_url=='withdraw'){
+        this.check_url1 = event.url.split("/")[1];
+       
+        if(this.menu_close=='close'||check_url=='register'||check_url=='deposit'||(check_url=='withdraw'&&this.check_url1!='affm')){
           this.showHeader = false;
          // this.class_checkShow = "content_100";
         }else{

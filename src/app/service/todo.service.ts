@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Http } from '@angular/http';
-import { map } from 'rxjs/operators';
+import { map,catchError,tap } from 'rxjs/operators';
+import { Observable,of} from 'rxjs';
 interface registerData{
   success:boolean,
   message:string,
@@ -32,7 +33,6 @@ export class TodoService {
 
 private local = window.location.origin;
 //private local = "http://localhost:80";
-//private local = "http://betufa55.com"; 
 
   getTodoList(data){
     if(data==1){
@@ -140,19 +140,24 @@ private local = window.location.origin;
     this.loggedInStatus = value;
   }
   loginRubsub(username,password){
-   return this.http2.post<myData>(this.local+'/api/dataAdjustSport.php',{ac:'loginRubsub',username:username,password:password});
+    return this.http.get('https://accbox.xyz/apis/memlogin.z?mem_code='+username+'&mem_codeTrans='+password+'&site_name=ufabet5499.com');
+
+  }
+
+  createUserRubsub(username){
+    return this.http2.post<myData>(this.local+'/api/dataAdjustSport.php',{ac:'loginRubsub',username:username});
   }
 
   registerRubSub(form){
-    if(JSON.parse(localStorage.getItem('data_member'))!=null){
-      var member_code = JSON.parse(localStorage.getItem('data_member')).member_code;
+    if(JSON.parse(localStorage.getItem('data_member_rubsub'))!=null){
+      var member_code = JSON.parse(localStorage.getItem('data_member_rubsub')).mem_code;
     }
     return this.http2.post<myData>(this.local+'/api/dataAdjustSport.php',{ac:"saveRubSub",data:form,a_link_username:member_code});
   }
 
   getRubSub(){
-    if(JSON.parse(localStorage.getItem('data_member'))!=null){
-      var member_code = JSON.parse(localStorage.getItem('data_member')).member_code;
+    if(JSON.parse(localStorage.getItem('data_member_rubsub'))!=null){
+      var member_code = JSON.parse(localStorage.getItem('data_member_rubsub')).mem_code;
     }
     return this.http2.post<myData>(this.local+'/api/dataAdjustSport.php',{ac:"getRubSub",a_link_username:member_code});
   }
@@ -161,10 +166,42 @@ private local = window.location.origin;
   getClick(id){
     return this.http2.post<myData>(this.local+'/api/dataAdjustSport.php',{ac:"getClick",id:id});
   }
+
+  getRegisAndPlay(){
+    if(JSON.parse(localStorage.getItem('data_member_rubsub'))!=null){
+      var member_code = JSON.parse(localStorage.getItem('data_member_rubsub')).mem_code;
+    }
+    return this.http2.get('https://accbox.xyz/apis/getAff_count_register.z?mem_code='+member_code+'&site_name=ufabet5499.com');
+  }
+
+  getMemberAff(){
+    if(JSON.parse(localStorage.getItem('data_member_rubsub'))!=null){
+      var member_code = JSON.parse(localStorage.getItem('data_member_rubsub')).mem_code;
+    }
+    return this.http2.get('https://accbox.xyz/apis/getAff_list_register.z?mem_code='+member_code+'&site_name=ufabet5499.com');
+  }
+  
+  getAmountIncome(){
+    if(JSON.parse(localStorage.getItem('data_member_rubsub'))!=null){
+      var member_code = JSON.parse(localStorage.getItem('data_member_rubsub')).mem_code;
+    }
+    return this.http2.get('https://ufabet5499.com/api/affm/getDataMemberIncome.php?sc='+member_code);
+  }
+
   updateClick(id){
     return this.http2.post<myData>(this.local+'/api/dataAdjustSport.php',{ac:"updateClick",id:id});
   }
 
+
+  private handleError<T>(operation = 'operation', result?: T) {
+    return (error: any): Observable<T> => {
+      localStorage.clear();
+      window.location.reload();
+      // console.error(error);   
+      // console.log(`${operation} failed: ${error.message}`);
+      return of(result as T);
+    };
+  }
 }
 interface contactData{
   success:boolean,

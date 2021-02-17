@@ -1,8 +1,10 @@
 <div class="container" style="padding-top: 20px;">
     <div class="d-flex justify-content-center h-100" style="padding: 30px;">
         <div class="card">
+
             <div class="card-header">
                 <h3>Sign In</h3>
+                <span style="color: red;">{{infoMessage}}</span>
                 <div class="d-flex justify-content-end social_icon">
                     <span><i class="fab fa-facebook-square"></i></span>
                     <span><i class="fab fa-google-plus-square"></i></span>
@@ -26,16 +28,16 @@
                     </div>
 
                     <div class="form-group">
-                        <input type="button" [routerLink]="[ '/affiliates/register' ]" routerLinkActive="active" value="สมัคร" class="btn btn-primary">
+                        <input type="button" [routerLink]="[ '/page/register' ]" routerLinkActive="active" value="สมัคร" class="btn btn-primary">
                         <input type="submit" value="Login" class="btn float-right btn-primary">
                     </div>
                 </form>
             </div>
-            <div class="card-footer">
+            <!-- <div class="card-footer">
                 <div class="d-flex justify-content-center links">
-                    สร้างลิงค์รับทรัพย์<a [routerLink]="[ '/affiliates/register' ]" routerLinkActive="active">สมัคร</a>
+                    สร้างลิงค์รับทรัพย์<a [routerLink]="[ '/affm/registerrs' ]" routerLinkActive="active">สมัคร</a>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </div>

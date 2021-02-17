@@ -1,14 +1,14 @@
 <div *ngIf="showHeader" class="{{class_checkShow}}">
-    <div class="container">
+    <div class="container" id="logo_id">
         <div class="header-area">
-            <div class="logo_area"><img src="/assets/images/logo/logo.png?v=1.1"></div>
+            <div class="logo_area hover" [routerLink]="['/home']"><img src="/assets/images/logo/logo.png?v=1.1"></div>
             <div class="image_header_area">
                 <img src="/assets/images/content/money-transfer2.png?v=1.1" alt="">
             </div>
         </div>
 
     </div>
-    <app-navbar>
+    <app-navbar *ngIf="check_url1!='affm'">
 
     </app-navbar>
 

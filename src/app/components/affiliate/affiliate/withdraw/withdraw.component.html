@@ -11,7 +11,7 @@
             <thead>
                 <tr>
                     <th scope="col">รายได้ที่ถอนได้</th>
-                    <th scope="col">1,200.00</th>
+                    <th scope="col">{{amount_withdraw}}</th>
                 </tr>
             </thead>
             <tbody>
@@ -24,5 +24,46 @@
             </tbody>
         </table>
         <div class="btn btn-success">ถอน</div>
+        <div style="padding:20px;">
+            <form class="form-inline">
+                <div class="form-group  mb-2">
+                    <label for="inputPassword2" class="sr-only">ค้นหา</label>
+                    <input type="password" class="form-control" id="inputPassword2" placeholder="ค้นหา">
+                </div>
+                <button type="submit" class="btn mx-sm-3 btn-primary mb-2">ค้นหา</button>
+            </form>
+            <table class="table table-bordered table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">ยอดเงิน</th>
+                        <th scope="col">ยอดคงเหลือ</th>
+                        <th scope="col">เวลา</th>
+                        <th scope="col">สถานะ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr>
+                        <th scope="row">1500</th>
+                        <td>5000</td>
+                        <td>12:000</td>
+                        <td>สำเร็จ</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1500</th>
+                        <td>5000</td>
+                        <td>12:000</td>
+                        <td>สำเร็จ</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1500</th>
+                        <td>5000</td>
+                        <td>12:000</td>
+                        <td>สำเร็จ</td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+
     </div>
+
 </div>

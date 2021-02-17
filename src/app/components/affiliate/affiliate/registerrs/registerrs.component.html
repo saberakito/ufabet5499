@@ -1,7 +1,4 @@
-<div class="contentPageArea" style="border:0px;">
-    <div style="margin-top:30px;" [innerHTML]="data_deatail | sanitizeHtml"></div>
-</div>
-<!-- <div class="container" style="padding:20px;color:white;">
+<div class="container" style="padding:20px;color:white;">
     <ng-container *ngIf="haveRubSub==true&&id==null">
         <div class="area_register_complete">
             <div class="text_register_complete">
@@ -21,7 +18,7 @@
     </ng-container>
     <ng-container *ngIf="haveRubSub!=true||id!=null">
         <ng-container *ngIf="id==null">
-            <button class="btn btn-info" [routerLink]="['/affiliate']" routerLinkActive="router-link-active">กลับ</button>
+            <button class="btn btn-info" [routerLink]="['/affm']" routerLinkActive="router-link-active">กลับ</button>
         </ng-container>
         <form #form="ngForm" (ngSubmit)="onSubmit(form)">
             <fieldset>
@@ -70,4 +67,4 @@
         </form>
     </ng-container>
 
-</div> -->
+</div>

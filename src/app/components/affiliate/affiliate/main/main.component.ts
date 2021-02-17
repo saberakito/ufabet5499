@@ -12,13 +12,16 @@ export class MainComponent implements OnInit {
   constructor(private router:Router,private todoServcie:TodoService) { }
   haveRubSub:any;
   member_code:any;
+  member_code_token:any;
   ngOnInit() {
-    if(JSON.parse(localStorage.getItem('data_member'))!=null){
-      this.member_code = JSON.parse(localStorage.getItem('data_member')).member_code;
+    if(JSON.parse(localStorage.getItem('data_member_rubsub'))!=null){
+      this.member_code = JSON.parse(localStorage.getItem('data_member_rubsub')).mem_code;
     }
     this.todoServcie.getRubSub().subscribe(data=>{
       if(data.success==true){
         this.haveRubSub = true;
+        this.member_code_token = data['key'];
+        debugger;
       }else{
         this.haveRubSub = false;
       }
@@ -30,6 +33,13 @@ export class MainComponent implements OnInit {
         this.router.navigate(['/affiliate']);
       }
     });
+    
+  }
+  copyInputMessage(inputElement){
+    inputElement.select();
+    document.execCommand('copy');
+    inputElement.setSelectionRange(0, 0);
+    alert('copy ลิงก์โปรโมทแล้ว');
   }
 
  

@@ -49,11 +49,11 @@ const appRoutes:Routes = [
   
   {path:"home", component:HomeComponent, canActivate:[AuthGuard]},
 
-  {path:"affiliate", 
+  {path:"affm", 
     component:AffiliateComponent, canActivate:[AuthGuard]
   },
   {
-    path:"affiliates", 
+    path:"affm", 
     loadChildren: () => import('./components/affiliate/affiliate.module').then(m => m.AffiliateModule)
   },
 

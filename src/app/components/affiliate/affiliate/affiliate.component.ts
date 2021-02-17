@@ -18,7 +18,7 @@ export class AffiliateComponent implements OnInit {
     localStorage.getItem('login_rubsub');
     if(localStorage.getItem('login_rubsub')=='success'){
       this.status_login_rubsub = true;
-      this.router.navigateByUrl('/affiliates/main');
+      this.router.navigateByUrl('/affm/main');
     }else{
       this.status_login_rubsub = false;
     }
@@ -26,17 +26,24 @@ export class AffiliateComponent implements OnInit {
 
   loginRubsub(form){
     this.todoServcie.loginRubsub(form.value.username,form.value.password).subscribe(data => {
-      
-      if(data.success==true){
-        this.router.navigateByUrl('/affiliates/main');
-        localStorage.setItem("data_member_rubsub",JSON.stringify(data.data));
-        localStorage.setItem("token_key_rubsub",JSON.stringify(data['token_key']));
-        this.todoServcie.setLoggedInRubsub(true);
-        //location.reload();
-      }else{
-        this.infoMessage = 'Login Failed. Please Try Again.';
-        this.router.navigate(['login']);
+      this.todoServcie.createUserRubsub(form.value.username).subscribe(data => {});
+      try{
+        var objArray = JSON.parse(data['_body']);
+        
+        if(objArray.ck_login=="Y"){
+          this.router.navigateByUrl('/affm/main');
+          localStorage.setItem("data_member_rubsub",JSON.stringify(objArray));
+          localStorage.setItem("token_key_rubsub",JSON.stringify(data['token_key']));
+          this.todoServcie.setLoggedInRubsub(true);
+         // location.reload();
+        }else{
+          alert('เข้าสู่ระบบผิดพลาด');
+          this.infoMessage = 'Login Failed. Please Try Again.';
+        }
+      }catch(e){
+        this.infoMessage = 'Error Login';
       }
+     
     });
   }
 

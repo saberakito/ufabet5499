@@ -8,11 +8,14 @@ import { MenuComponent } from './affiliate/menu/menu.component';
 import { IncomeComponent } from './affiliate/income/income.component';
 import { MemberComponent } from './affiliate/member/member.component';
 import { WithdrawComponent } from './affiliate/withdraw/withdraw.component';
+import { RegisterrsComponent } from './affiliate/registerrs/registerrs.component';
+import { sanitize2HtmlPipe } from './sanitize-html2.pipe';
 @NgModule({
-  declarations: [MainComponent,RegisterComponent, MenuComponent, IncomeComponent, MemberComponent, WithdrawComponent],
+  declarations: [MainComponent,RegisterComponent,RegisterrsComponent, MenuComponent, IncomeComponent, MemberComponent, WithdrawComponent,sanitize2HtmlPipe],
   imports: [
     CommonModule,
     AffiliateRoutingModule,FormsModule
-  ]
+  ],
+  exports: [ sanitize2HtmlPipe ]
 })
 export class AffiliateModule { }

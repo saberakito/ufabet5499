@@ -16,6 +16,6 @@ export class MenuComponent implements OnInit {
     localStorage.removeItem("data_member_rubsub");
     localStorage.removeItem("token_key_rubsub");
     localStorage.removeItem("login_rubsub");
-    this.router.navigate(['/affiliate']);
+    this.router.navigate(['/affm']);
   }
 }
